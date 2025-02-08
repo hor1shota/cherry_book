@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require_relative 'fizzbuzz'
+require_relative 'fizz_buzz'
 
 # FizzBuzzTestはFizzBuzzの動作を確認するテストを行います。
 class FizzBuzzTest < Minitest::Test
