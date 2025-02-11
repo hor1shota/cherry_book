@@ -6,8 +6,8 @@ require_relative 'convert_length'
 # Test convert_length
 class TestConvertLength < Minitest::Test
   def test_convert_length
-    assert_equal 39.37, convert_length(1, 'm', 'in')
-    assert_equal 0.38, convert_length(15, 'in', 'm')
-    assert_equal 10_670.73, convert_length(35_000, 'ft', 'm')
+    assert_equal 39.37, convert_length(1, :m, :in)
+    assert_equal 0.38, convert_length(15, :in, :m)
+    assert_equal 10_670.73, convert_length(35_000, :ft, :m)
   end
 end
