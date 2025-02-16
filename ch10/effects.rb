@@ -11,4 +11,13 @@ module Effects
         .join
     end
   end
+
+  def self.loud(cnt)
+    ->(words) do
+      words
+        .split(' ')
+        .map{ |word| word.upcase + '!' * cnt }
+        .join(' ')
+    end
+  end
 end
