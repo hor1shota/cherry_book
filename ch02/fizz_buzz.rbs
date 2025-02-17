@@ -1,0 +1,10 @@
+# TypeProf 0.30.1
+
+class Object
+  private
+  def fizz_buzz: (Integer n) -> String
+end
+
+class FizzBuzzTest < Minitest::Test
+  def test_fizz_buzz: -> untyped
+end
